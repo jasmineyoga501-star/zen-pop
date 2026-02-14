@@ -8,7 +8,7 @@ interface PayPalPaymentProps {
 
 export const PayPalPayment: React.FC<PayPalPaymentProps> = ({ amount, onSuccess }) => {
     return (
-        <PayPalScriptProvider options={{ "client-id": "test" }}>
+        <PayPalScriptProvider options={{ clientId: "test" }}>
             <PayPalButtons
                 style={{ layout: "horizontal", height: 45 }}
                 createOrder={(_, actions) => {

@@ -31,7 +31,6 @@ export const ZenPopGame: React.FC = () => {
     const [level, setLevel] = useState<Level>(1);
     const [handLandmarker, setHandLandmarker] = useState<HandLandmarker | null>(null);
     const [bubbles, setBubbles] = useState<Bubble[]>([]);
-    const [isReady, setIsReady] = useState(false);
 
     // Game Stats
     const [coins, setCoins] = useState(0);
